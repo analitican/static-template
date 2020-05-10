@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <img src="" id="mark" width="480px" />
+
+    <script>
+      console.log("About to do my first fetch");
+      fetch(
+        "https://images.pexels.com/photos/3968443/pexels-photo-3968443.jpeg"
+      )
+        .then(response => {
+          console.log("response");
+          return response.blob();
+        })
+        .then(blob => {
+          console.log(blob);
+          document.getElementById("mark").src = URL.createObjectURL(blob);
+        });
+    </script>
+  </body>
+</html>

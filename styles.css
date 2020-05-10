@@ -1,0 +1,26 @@
+.container {
+  padding: 5px;
+}
+
+.col-sm {
+  padding: 3px;
+}
+
+#footer {
+  margin: 50px;
+}
+
+#coolimage .coolimage {
+  width: 100% auto;
+  background: url("https://s3.amazonaws.com/analitican.com/images/mountain1.png")
+    center center no-repeat;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+}
+
+.card cool {
+  background-color: transparent;
+  color: #fff;
+  border-color: #fff;
+}
